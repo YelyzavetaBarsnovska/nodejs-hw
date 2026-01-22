@@ -1,20 +1,36 @@
 {
   "name": "nodejs-hw",
   "version": "1.0.0",
-  "description": "Express homework",
+  "description": "npm init -y",
+  "main": "index.js",
   "type": "module",
-  "main": "src/server.js",
   "scripts": {
+    "dev": "nodemon src/server.js",
     "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YelyzavetaBarsnovska/nodejs-hw"
+  },
+  "keywords": [],
+  "author": "YELYZAVETA BARANOVSKA <LIZABARANOVSKA133@GMAIL.COM>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YelyzavetaBarsnovska/nodejs-hw/issues"
+  },
+  "homepage": "https://github.com/YelyzavetaBarsnovska/nodejs-hw#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0",
+    "nodemon": "^3.1.11"
   },
   "dependencies": {
-    "express": "^4.19.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "pino-http": "^9.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.3"
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "pino-http": "^11.0.0",
+    "pino-pretty": "^13.1.3"
   }
 }
