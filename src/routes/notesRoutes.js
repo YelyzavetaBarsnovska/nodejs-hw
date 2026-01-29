@@ -17,6 +17,10 @@ import {
   updateNote,
 } from '../controllers/notesController.js';
 
+import { authenticate } from '../middleware/authenticate.js';
+
+router.use(authenticate);
+
 router.get('/notes', celebrate(getAllNotesSchema), getAllNotes);
 router.get('/notes/:noteId', celebrate(noteIdSchema), getNoteById);
 router.post('/notes', celebrate(createNoteSchema), createNote);
